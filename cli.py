@@ -13,6 +13,7 @@ class CLI:
         scan_parser.add_argument("-sp", "--start-port", type=int, default=1, help="Start port (default: 1)")
         scan_parser.add_argument("-ep", "--end-port", type=int, default=1024, help="End port (default: 1024)")
         scan_parser.add_argument("-time", "--timeout", type=int, default=2, help="connection timeout in seconds (default 2 seconds)")
+        scan_parser.add_argument("--dns-lookup", action="store_true", help="Uses domain name instead of an IP addreess when scanning.")
         #TODO Nmap like version detection is not easy to implement. Save this
         #scan_parser.add_argument("-v", "--v", help="Find software vesion. Usually used in conjunction with a port scan.")
         # Subcommand: version
